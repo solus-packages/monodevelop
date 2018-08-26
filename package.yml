@@ -1,0 +1,33 @@
+name       : monodevelop
+version    : 7.6.0.711
+release    : 1
+source     :
+    - https://download.mono-project.com/sources/monodevelop/monodevelop-7.6.0.711.tar.bz2 : fb3aa63c4be873cdcdbdee3e1c6e93cfee4b4b09242c6f7772b8eff1643639c5
+license    :
+    - LGPL-2.1-or-later
+    - MIT
+component  : programming.ide
+summary    : a cross platform IDE mostly aimed at Mono/.NET developers
+description: |
+    MonoDevelop is a full-featured integrated development environment (IDE) for mono using Gtk#.
+networking : yes
+builddeps  :
+    - pkgconfig(gtk-sharp-2.0)
+    - pkgconfig(libcurl)
+    - pkgconfig(libssh2)
+    - pkgconfig(mono)
+    - fsharp
+    - mono-msbuild
+rundeps    :
+    - gtk-sharp
+    - mono
+    - mono-msbuild
+setup      : |
+    cert-sync --user /etc/ssl/certs/ca-certificates.crt
+    %configure --enable-release
+    # download packages before actually compiling
+    %make restore-packages
+build      : |
+    %make
+install    : |
+    %make_install
