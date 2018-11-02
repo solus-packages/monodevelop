@@ -1,6 +1,6 @@
 name       : monodevelop
 version    : 7.6.0.711
-release    : 1
+release    : 2
 source     :
     - https://download.mono-project.com/sources/monodevelop/monodevelop-7.6.0.711.tar.bz2 : fb3aa63c4be873cdcdbdee3e1c6e93cfee4b4b09242c6f7772b8eff1643639c5
 license    :
@@ -20,7 +20,7 @@ builddeps  :
     - mono-msbuild
 rundeps    :
     - gtk-sharp
-    - mono
+    - mono-devel
     - mono-msbuild
 setup      : |
     cert-sync --user /etc/ssl/certs/ca-certificates.crt

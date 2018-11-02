@@ -3,7 +3,7 @@
         <Name>monodevelop</Name>
         <Packager>
             <Name>Fabio Forni</Name>
-            <Email>fabio0x@keemail.me</Email>
+            <Email>livingsilver94.solus@tuta.io</Email>
         </Packager>
         <License>LGPL-2.1-or-later</License>
         <License>MIT</License>
@@ -20,7 +20,8 @@
 </Description>
         <PartOf>programming.ide</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/mdtool</Path>
+            <Path fileType="executable">/usr/bin/monodevelop</Path>
             <Path fileType="library">/usr/lib/monodevelop/AddIns/AspNet/CodeTemplates/CSharp/AddController/ControllerWithEmptyReadAndWriteActions.tt</Path>
             <Path fileType="library">/usr/lib/monodevelop/AddIns/AspNet/CodeTemplates/CSharp/AddController/Empty.tt</Path>
             <Path fileType="library">/usr/lib/monodevelop/AddIns/AspNet/CodeTemplates/CSharp/AddView/Aspx/Empty.tt</Path>
@@ -1011,8 +1012,32 @@
             <Path fileType="data">/usr/share/icons/hicolor/512x512/apps/monodevelop.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/monodevelop.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/monodevelop.svg</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/da/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hu/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/id/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ko/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nl/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pl/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt_BR/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tr/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/monodevelop.mo</Path>
+            <Path fileType="man">/usr/share/man/man1/mdtool.1</Path>
+            <Path fileType="man">/usr/share/man/man1/monodevelop.1</Path>
             <Path fileType="data">/usr/share/mime/XMLnamespaces</Path>
             <Path fileType="data">/usr/share/mime/aliases</Path>
             <Path fileType="data">/usr/share/mime/application/x-asax.xml</Path>
@@ -1065,19 +1090,20 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">monodevelop</Dependency>
+            <Dependency release="2">monodevelop</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/monodevelop-core-addins.pc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/monodevelop.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-05-15</Date>
+        <Update release="2">
+            <Date>2018-10-30</Date>
             <Version>7.6.0.711</Version>
             <Comment>Packaging update</Comment>
             <Name>Fabio Forni</Name>
-            <Email>fabio0x@keemail.me</Email>
+            <Email>livingsilver94.solus@tuta.io</Email>
         </Update>
     </History>
 </PISI>
